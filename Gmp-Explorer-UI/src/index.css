@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.table>:not(caption)>*>*{
+  background-color: black !important;
+}
+
+
+/* -- for ViewTransaction page ---- */
+
+.hearder-div{
+  margin: 25px 40px;
+}
+.header-text h2{
+  font-size: 30px;
+  margin-left: 40px;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  @media (max-width: 541px) {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+.searchTransaction{
+  display: flex;
+  flex: start;
+  @media (max-width: 600px) {
+  display: flex;
+    justify-content: center;
+  }
+
+}
+.searchTransaction-div{
+  width: 450px;
+  display: flex;
+  border:  1px solid white;
+  border-radius: 5px;
+  @media (max-width: 991px) {
+    width: 300px;
+  }
+  @media (max-width: 767px) and (min-width: 542px) {
+    width: 250px;
+  }
+
+ 
+}
+.searchTransaction-div  span{
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.searchTransaction input {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  padding: 5px;
+  border-right: 1px solid white;
+
+}
+.searchTransaction input:focus-visible {
+  box-shadow: none;
+  border-right: 1px solid white;
+  outline: none;
+}
+
+.table-container{
+  margin: 20px 50px;
+  @media (max-width:767px) {
+    margin: 20px 10px;
+  }
+}
+.table-div{
+background-color: black;
+text-align: center;
+justify-content: center !important;
+align-items: center !important;
+}
+.table{
+  background-color: black;
+  color: white;
+}
+tr{
+  font-size: 9px;
+  margin-top: 10px;
+  vertical-align: bottom;
+  @media (max-width:600px) {
+    font-size: 7px;
+  }
+}
+.btn-outline-success{
+  padding: 2px 10px;
+  font-size: 9px;
+  color: #0F9416;
+  border-color: #0F9416;
+}
+.btn-outline-danger{
+  padding: 2px 10px;
+  font-size: 9px;
+}
+.table-heading{
+  border: 1px solid #2695FF ;
+  border-radius: 5px !important;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.table-heading th{
+  padding: 20px 10px;
+}
+
+.copyIcon{
+ cursor:pointer;
+}
+.page-link {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.page-link:hover {
+  background-color: transparent;
+}
+.page-link:active {
+  background-color: transparent;
+}
+
+/* TransactionDetailsPage csss */
+
+.TD-text{
+  color: white;
+  font-size: 15px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.TransactionDetails-container{
+  border: 1px solid #2695FF;
+  border-radius: 5px;
+  margin: 25px 60px ;
+  padding: 20px;
+    @media (max-width : 789px) {
+      font-size: 12px;
+    }
+    @media (max-width : 690px) {
+      font-size: 10px;
+    }
+  /* @media (max-width : 580px) {
+    font-size: 10px;
+  }
+  @media (max-width : 450px) {
+    font-size: 8px;
+  } */
+}
+.TransactionDetails-container .row{
+  margin-top: 10px ;
+}
+
+.details-link{
+  cursor: pointer;
+}
+.details-link:hover{
+  color: 2695FF;
+  cursor: pointer;
+}
+.details{
+  opacity: 0.8;
+  font-size: 11px;
+  overflow: auto;
+  
+}

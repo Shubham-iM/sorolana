@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "mocha": "^10.2.0",
+    "soroban-client": "*",
+    "stellar-sdk": "^11.0.1",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10"
+  }
+}

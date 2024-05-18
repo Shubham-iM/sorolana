@@ -1,0 +1,48 @@
+.navbar-component {
+    background-color: black;
+    color: white;
+}
+
+.navbar-container {
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100% !important;
+}
+.navbar-container.container {
+    @media (max-width:990px) {
+        
+        max-width: 900px !important;
+    }
+
+}
+.navbar-toggler{
+    background-color: white;
+    color: white ;
+}
+.navbar-toggle-icon{
+    background-color: white !important;
+}
+.active{
+    color: #1F8BF4;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1F8BF4;
+}
+.phantom-wallet-btn{
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+.phantom-wallet{
+    border: 1px solid #2695FF;
+    border-radius: 5px;
+}
+
+.wallet-adapter-button-trigger{
+  margin-bottom: 10px;
+}
