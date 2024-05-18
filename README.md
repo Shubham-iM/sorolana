@@ -27,3 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 #  command for event emit for solana 
  goto inside Gmp-node then run command -> `node validator1.js`
+
+#  sorolana product demo
+   https://drive.google.com/file/d/1qzZqTWrLAJIlmh1LdrNtBKFQH9hgbF6q/view?usp=sharing
