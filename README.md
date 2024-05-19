@@ -33,8 +33,7 @@ This user interface allows users to transfer assets between accounts on the Soro
 ### Sorolana Backend
 The backend service listens for events related to transactions and validates them.
 
-## Installation and Setup
-
+### Installation and Setup
 ### GMP UI Explorer
 
 1. Navigate to the `gmp-ui-explorer` directory.
@@ -48,6 +47,7 @@ npm install
 npm start
 
 ### Sorolana Bridge UI
+
 1. Navigate to the sorolana-bridge-ui directory.
    ```bash
   cd ../sorolana-bridge-ui
@@ -57,7 +57,8 @@ npm start
 3.Start the Sorolana Bridge UI.
 npm run dev
 
-### Sorolana Backend
+###  Sorolana Backend
+
 1.Navigate to the sorolana-backend directory.
 cd ../sorolana-backend
 2.Install the dependencies for the GMP node.
