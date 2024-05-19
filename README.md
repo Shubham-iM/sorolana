@@ -41,16 +41,19 @@ The backend service listens for events related to transactions and validates the
    ```bash
    cd gmp-ui-explorer
 2.Install the dependencies.
+```bash
 npm install
 3.Start the GMP Explorer.
+```bash
 npm start
 
 ### Sorolana Bridge UI
-1.  Navigate to the sorolana-bridge-ui directory.
+1. Navigate to the sorolana-bridge-ui directory.
    ```bash
-cd ../sorolana-bridge-ui
+  cd ../sorolana-bridge-ui
+
 2.Install the dependencies.
-npm install
+ npm install
 3.Start the Sorolana Bridge UI.
 npm run dev
 
