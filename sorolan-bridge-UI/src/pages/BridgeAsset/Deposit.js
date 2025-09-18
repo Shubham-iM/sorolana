@@ -136,21 +136,49 @@ export default function Deposit(props) {
     }
   };
 
+  // const handleAssets = async () => {
+  //   try {
+  //     let {
+  //       data: { data },
+  //     } = await axios.get("/api/getAssets");
+  //     console.log("data",data);
+  //     if (data) {
+  //       console.log("data 143:", data)
+  //       setAssets(data);
+  //       console.log("assets",assets);
+  //     }
+  //   } catch (error) {
+  //     // console.log("🚀 ~ handleChains ~ error", error);
+  //   }
+  // };
+
+
+
   const handleAssets = async () => {
-    try {
-      let {
-        data: { data },
-      } = await axios.get("/api/getAssets");
-      console.log("data",data);
-      if (data) {
-        console.log("data 143:", data)
-        setAssets(data);
-        console.log("assets",assets);
-      }
-    } catch (error) {
-      // console.log("🚀 ~ handleChains ~ error", error);
+  try {
+    // Hardcoded assets data
+    const data = [
+      { chain_id: 1, name: "XLM", symbol: "XLM" },
+      { chain_id: 2, name: "SOL", symbol: "SOL" },
+      { chain_id: 1, name: "WSOL", symbol: "WSOL" },
+      { chain_id: 2, name: "WXLM", symbol: "WXLM" }
+    ];
+
+    console.log("data", data);
+
+    // Ensure that 'data' is an array before setting it to 'assets'
+    if (Array.isArray(data)) {
+      setAssets(data); // Set the hardcoded data to assets
+      console.log("assets", data); // Logs the hardcoded data
+    } else {
+      console.error("Expected 'data' to be an array, but got", typeof data);
+      setAssets([]); // Set an empty array if the data is not valid
     }
-  };
+  } catch (error) {
+    console.log("Error setting assets:", error);
+  }
+};
+
 
   const handleFromChain = (e) => {
     console.log("eeeeeee",e);
@@ -1042,7 +1070,10 @@ export default function Deposit(props) {
                   },
                 }}
               >
-                {currentAsset.map((e) => (
+                {currentAsset.map((e) => {
+                  console.log("currentAsset:", currentAsset);
+                  console.log("e:", e);
+                  return (
                   <MenuItem
                     sx={{
                       color: "white",
@@ -1090,7 +1121,7 @@ export default function Deposit(props) {
                       {e?.name}
                     </span>
                   </MenuItem>
-                ))}
+                )})}
               </Select>
             </Box>
           </Grid>

@@ -3,6 +3,8 @@ import soalanIdl from './idl.json';
 import {useAnchorWallet} from '@solana/wallet-adapter-react';
 
 const NETWORK = process.env.NEXT_PUBLIC_NETWORK
+console.log("🚀 ~ NETWORK:", NETWORK)
+// https://api.devnet.solana.com
 
 export const conn = new anchor.web3.Connection(`${NETWORK}`, 'processed');
 console.log("conn:", conn)
